@@ -1,1 +1,1 @@
-# course-site
+# m1-project
