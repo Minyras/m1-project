@@ -16,7 +16,69 @@ h6 {
 }
 
 /* desktop */
-
+.course-info {
+	background-color: #9dc9c8;
+	padding: 100px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	gap: 20px;
+	h2 {
+		/* margin-bottom: 20px; */
+		font-size: 40px;
+		font-weight: 800;
+	}
+	.price {
+		font-size: 30px;
+		font-weight: 500;
+	}
+	p {
+		font-weight: 400;
+	}
+	.course-description {
+		display: flex;
+		/* justify-content: space-between; */
+		gap: 80px;
+		width: 100%;
+	}
+	.course-level,
+	.course-access {
+		width: 250px;
+	}
+	.first-paragraph {
+		padding-bottom: 20px;
+		font-size: 20px;
+	}
+}
+footer {
+	background-color: black;
+	color: white;
+	padding: 60px 50px;
+	display: flex;
+	justify-content: space-between;
+	a {
+		padding-right: 5px;
+		text-decoration: none;
+		img {
+			height: 30px;
+			width: 30px;
+		}
+	}
+	.footer-left {
+		display: flex;
+		flex-direction: column;
+    gap: 20px;
+		justify-content: space-between;
+	}
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 20px;
+	}
+}
 /* tablet */
 @media screen and (max-width: 1280px) {
 }
