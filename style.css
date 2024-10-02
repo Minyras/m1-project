@@ -90,11 +90,15 @@ h3.course-item-header {
 
     .course-item {
       width: 260px;
-      height: 200px;
+      height: 210px;
     }
 
     .course-item-top img {
       width: 100%;
+    }
+
+    .course-item-bottom{
+      padding-top: 5px;
     }
 
     .course-item-bottom h3{
@@ -107,4 +111,9 @@ h3.course-item-header {
 }
 
 /* smartphone  */
-@media screen and (min-width: 320) {}
+@media screen and (max-width: 991px) {
+  .program-course-items-container{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+}
