@@ -52,6 +52,7 @@ h6 {
 	}
 }
 footer {
+	position: relative;
 	background-color: black;
 	color: white;
 	padding: 60px 50px;
@@ -66,10 +67,10 @@ footer {
 		}
 	}
 	.footer-left {
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
-    gap: 20px;
-		justify-content: space-between;
+		gap: 20px;
+		justify-content: space-between; */
 	}
 	.contact-info {
 		display: flex;
@@ -78,6 +79,13 @@ footer {
 		align-items: flex-start;
 		gap: 20px;
 	}
+	.contact img {
+		margin-right: 22px;
+	}
+	.sync {
+		position: absolute;
+		bottom: 30px;
+	}
 }
 /* tablet */
 @media screen and (max-width: 1280px) {
@@ -85,4 +93,7 @@ footer {
 
 /* smartphone  */
 @media screen and (max-width: 991px) {
+	footer {
+		flex-wrap: wrap;
+	}
 }
