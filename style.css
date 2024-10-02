@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -14,15 +15,205 @@ h5,
 h6 {
   font-family: "Roboto Slab", sans-serif;
 }
-
 /* desktop */
-@media screen and (min-width: 1280px) {
+body{
+  height: 5000px;
+}
+header{
+  margin-left: 121px;
+  margin-top: 21px;
+  .logo{
+    width: 112px;
+    height: 66px;
+    margin: 0px;
+    margin-bottom: 100px;
+  }
+
+}
+.banner{
+  margin-left: 121px;
+  .calendar ul{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 29px;
+  
+  }.calendar li{
+    margin-right: 25px;
+    display: flex;
+    justify-content: baseline;
+  }
+  .calendar img{
+    width: 22px;
+    margin-right: 8px;
+
+  }
+  .banner-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-text{
+    width: 50%;
+  }
+  .banner-text h1{
+    font-size: 80px;
+  }
+  .banner-text p{
+    font-size: 20px;
+    width: 414px;
+  }
+  .banner-img{
+    align-items: center;
+    width: 50%;
+    margin-left: 140px;
+  }
+  .banner-img img{
+    width: 304px;
+    height: 356px;
+    
+  }
+  .aphorism{
+    background-color: #1E4681;
+    border: 1px solid #1E4681;
+    border-radius: 4px;
+    width: 483.3px;
+    height: 200px;
+    font-size: 25px;
+    color: white;
+    padding: 19px 27px;
+    margin-top: 177px;
+    margin-left: 288px;
+  
+  }
+  .aphorism .author{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 184px;
+  }
 }
 
+
+
 /* tablet */
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1280px) {
+  header{
+    margin-left: 70px;
+  }
+  header .logo{
+    margin-bottom: 58px;
+    width: 65px;
+    height: 38px;
+  }
+  .banner{
+    margin-left: 70px;
+    .calendar ul{
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    .calendar li{
+      margin-right: 14px;
+    }
+    .calendar img{
+      width: 12px;
+      margin-right: 8px;
+    }
+    .banner-text h1{
+      font-size: 46px;
+    }
+    .banner-text p{
+      font-size: 12px;
+      width: 264px;
+    }
+    .banner-img img{
+      width: 176px;
+      height: 206px;
+      
+    }
+    .aphorism{
+      width: 280px;
+      height: 115px;
+      font-size: 14px;
+      padding: 12px 15px;
+      margin-top: 114px;
+      margin-left: 182px;
+    
+    }
+    .aphorism .author{
+      font-size: 12px;
+      margin-top: 8px;
+      margin-left: 108px;
+    }
+
+  }
 }
 
 /* smartphone  */
-@media screen and (min-width: 320) {
+@media screen and (max-width: 920px) {
+  header{
+    min-width: 320px;
+    margin-left: 35px;
+  }
+  header .logo{
+    margin-bottom: 45px;
+    width: 52px;
+    height: 31px;
+  }
+  .banner{
+    min-width: 320px;
+    margin-left: 35px;
+    .calendar ul{
+      font-size: 10px;
+      margin-bottom: 8px;
+    }
+    .calendar li{
+      margin-right: 11px;
+    }
+    .calendar img{
+      width: 10px;
+      margin-right: 6px;
+    }
+    .banner-item{
+      /* justify-content: flex-start;
+      align-items: start;
+      flex-direction: column; */
+      flex-wrap: wrap;
+    }
+    .banner-text h1{
+      width: 100%;
+      font-size: 37px;
+    }
+    .banner-text p{
+      font-size: 10px;
+      width: 212px;
+    }
+    .banner-img{
+      width: 100%;
+    }
+    .banner-img img{
+      width: 141px;
+      height: 175px;
+      
+    }
+    .aphorism-container{
+      display: flex;
+      justify-content: center;
+    }
+    .aphorism{
+      width: 225px;
+      height: 93px;
+      font-size: 11px;
+      padding: 8px 12px;
+    
+    }
+    .aphorism .author{
+      font-size: 10px;
+      margin-top: 7px;
+      margin-left: 87px;
+    }
+
+  }
+
 }
