@@ -17,16 +17,17 @@ h6 {
 }
 
 /* desktop */
-.wrapper {
-  padding: 50px;
-}
 
 .program-course-container {
   width: 100%;
   margin: auto;
+  min-width: 320px;
 }
 
 .program-course-container {
+  .wrapper {
+    padding: 50px;
+  }
   .program-course-header {
     font-size: 55px;
     margin-bottom: 10%;
@@ -56,8 +57,8 @@ h6 {
     padding-top: 15px;
     padding: 25px;
   }
-}
 
+}
 .program-course-items-container {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); */
@@ -78,8 +79,6 @@ h3.course-item-header {
   margin-bottom: 5%;
 }
 
-
-
 /* tablet */
 @media screen and (max-width: 1280px) {
   .program-course-container {
@@ -89,8 +88,7 @@ h3.course-item-header {
     }
 
     .course-item {
-      width: 260px;
-      height: 210px;
+      width: 100%;
     }
 
     .course-item-top img {
