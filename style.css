@@ -16,13 +16,11 @@ h6 {
 }
 
 /* desktop */
-@media screen and (min-width: 1280px) {
-}
 
 /* tablet */
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1280px) {
 }
 
 /* smartphone  */
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 991px) {
 }
