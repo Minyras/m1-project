@@ -18,20 +18,21 @@ h6 {
 /* desktop */
 .course-info {
 	background-color: #9dc9c8;
-	padding: 100px 50px;
+	height: 100vh;
+	padding: 160px 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: start;
 	gap: 20px;
 	h2 {
-		/* margin-bottom: 20px; */
-		font-size: 40px;
+		margin-bottom: 20px;
+		font-size: 55px;
 		font-weight: 800;
 	}
 	.price {
-		font-size: 30px;
-		font-weight: 500;
+		font-size: 70px;
+		margin-bottom: 20px;
 	}
 	p {
 		font-weight: 400;
@@ -47,44 +48,45 @@ h6 {
 		width: 250px;
 	}
 	.first-paragraph {
-		padding-bottom: 20px;
+		margin-bottom: 10px;
 		font-size: 20px;
 	}
 }
+/* footer */
 footer {
-	position: relative;
 	background-color: black;
 	color: white;
-	padding: 60px 50px;
-	display: flex;
-	justify-content: space-between;
-	a {
-		padding-right: 5px;
-		text-decoration: none;
-		img {
-			height: 30px;
-			width: 30px;
-		}
+	padding: 30px 50px;
+
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 100px;
 	}
 	.footer-left {
-		/* display: flex;
-		flex-direction: column;
-		gap: 20px;
-		justify-content: space-between; */
-	}
-	.contact-info {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
-		gap: 20px;
+		gap: 15px;
 	}
-	.contact img {
-		margin-right: 22px;
+	.footer-right {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		img {
+			height: 20px;
+		}
 	}
-	.sync {
-		position: absolute;
-		bottom: 30px;
+	.contact {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+	.social-icons {
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		gap: 15px;
 	}
 }
 /* tablet */
