@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* max-widthle islenilsin */
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+}
+
+/* tablet */
+@media screen and (min-width: 992px) {
+}
+
+/* smartphone  */
+@media screen and (min-width: 320) {
+}
