@@ -15,8 +15,143 @@ h5,
 h6 {
   font-family: "Roboto Slab", sans-serif;
 }
-
 /* desktop */
+
+header {
+  padding: 50px;
+  padding-bottom: 0px;
+  .logo {
+    width: 112px;
+    height: 66px;
+    margin: 0px;
+    margin-bottom: 3%;
+  }
+}
+.banner {
+  padding: 50px;
+  padding-top: 0px;
+  .calendar ul {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 29px;
+  }
+  .calendar li {
+    margin-right: 25px;
+    display: flex;
+    justify-content: baseline;
+  }
+  .calendar img {
+    width: 22px;
+    margin-right: 8px;
+  }
+  .banner-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-text {
+    width: 60%;
+  }
+  .banner-text h1 {
+    font-size: 80px;
+  }
+  .banner-text p {
+    font-size: 23px;
+  }
+  .banner-img {
+    align-items: center;
+    width: 30%;
+  }
+  .banner-img img {
+    width: 304px;
+    height: 356px;
+    margin: auto;
+  }
+  .aphorism-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aphorism {
+    background-color: #1e4681;
+    border: 1px solid #1e4681;
+    border-radius: 4px;
+    width: 483.3px;
+    height: 200px;
+    font-size: 25px;
+    color: white;
+    padding: 19px 27px;
+    margin-top: 100px;
+  }
+  .aphorism .author {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 184px;
+  }
+}
+/* section course-info */
+.course-info {
+  background-color: #9dc9c8;
+  /* height: 100vh; */
+  padding: 160px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  h2 {
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-weight: 800;
+  }
+  .price {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: 400;
+  }
+  .course-description {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 80px;
+    width: 100%;
+  }
+  .course-level,
+  .course-access {
+    width: 250px;
+  }
+  .first-paragraph {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+/* price */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.price {
+  animation: bounce 1.5s ease infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.social-icons img {
+  transition: transform 0.5s ease-in-out;
+}
 
 .program-course-container {
   width: 100%;
@@ -44,7 +179,9 @@ h6 {
   .course-item:hover {
     transform: scale(1.03);
     cursor: pointer;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+      rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
     /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; */
   }
 
@@ -57,7 +194,6 @@ h6 {
     padding-top: 15px;
     padding: 25px;
   }
-
 }
 .program-course-items-container {
   display: grid;
@@ -77,9 +213,10 @@ h6 {
 
 h3.course-item-header {
   margin-bottom: 5%;
+}
 .about-course {
   .container {
-    padding: 50px;
+    padding: 50px 80px;
   }
   .container h1 {
     font-size: 55px;
@@ -91,6 +228,11 @@ h3.course-item-header {
     justify-content: space-between;
     margin-bottom: 50px;
   }
+  .course-content img:hover {
+    transform: scale(1.2);
+  }
+
+  .course-contentimg,
   .description {
     width: 60%;
     font-size: 24px;
@@ -98,6 +240,7 @@ h3.course-item-header {
   }
   .course-content img {
     width: 25%;
+    transition: transform 0.5s ease-in-out;
   }
   .duration-container {
     display: flex;
@@ -126,11 +269,160 @@ h3.course-item-header {
   .duration-container img {
     width: 20%;
   }
+}
+.format-learn {
+  min-width: 320px;
+  padding: 100px 80px;
+  .format-container {
+    margin-bottom: 200px;
+  }
+  .format-container h2 {
+    font-size: 55px;
+    margin-bottom: 100px;
+  }
+  .format {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 80%;
+  }
+  .format div {
+    width: 50%;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  .format div:hover {
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+      rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 
+    cursor: pointer;
+  }
+  .format p {
+    font-size: 18px;
+  }
+  .format a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .learn h2 {
+    font-size: 55px;
+    margin-bottom: 60px;
+  }
+  .learn-list ul li {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .learn-list ul li:hover {
+    cursor: pointer;
+    color: rgba(224, 26, 151, 0.6);
+    transition: 0.25s;
+  }
 }
 
+.social-icons img:hover {
+  transform: rotate(360deg);
+}
+.first-paragraph:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 50px;
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    img {
+      height: 20px;
+    }
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .social-icons {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
 /* tablet */
 @media screen and (max-width: 1280px) {
+  header {
+    padding: 50px;
+    padding-bottom: 0px;
+    .logo {
+      width: 65px;
+      height: 38px;
+    }
+  }
+  .banner {
+    padding: 50px;
+    padding-top: 0px;
+    .calendar ul {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .calendar li {
+      margin-right: 14px;
+    }
+    .calendar img {
+      width: 12px;
+    }
+    .calendar {
+      margin-bottom: -20px;
+    }
+    .banner-text h1 {
+      font-size: 46px;
+    }
+    .banner-text p {
+      font-size: 12px;
+      width: 264px;
+    }
+    .banner-img img {
+      width: 176px;
+      height: 206px;
+    }
+    .aphorism {
+      width: 280px;
+      height: 115px;
+      font-size: 14px;
+      padding: 12px 15px;
+      margin-top: 40px;
+    }
+    .aphorism .author {
+      font-size: 12px;
+      margin-top: 8px;
+      margin-left: 108px;
+    }
+  }
+  .course-info {
+    padding: 100px 50px;
+  }
 
   .program-course-container {
     .program-course-header {
@@ -146,77 +438,367 @@ h3.course-item-header {
       width: 100%;
     }
 
-    .course-item-bottom{
+    .course-item-bottom {
       padding-top: 5px;
     }
 
-    .course-item-bottom h3{
+    .course-item-bottom h3 {
       font-size: 17px;
     }
-    .course-item-bottom p{
+    .course-item-bottom p {
       font-size: 14px;
 
-  .about-course {
-    .container h1 {
-      font-size: 48px;
-    }
-    .description p {
-      font-size: 20px;
-    }
-    .duration-container {
-      width: 90%;
-      gap: 70px;
-    }
-    .duration {
-      gap: 50px;
-    }
-    .duration h3 {
-      font-size: 20px;
-
+      .about-course {
+        .container h1 {
+          font-size: 48px;
+        }
+        .description p {
+          font-size: 20px;
+        }
+        .duration-container {
+          width: 90%;
+          gap: 70px;
+        }
+        .duration {
+          gap: 50px;
+        }
+        .duration h3 {
+          font-size: 20px;
+        }
+      }
+      .format-learn {
+        .format-container h2 {
+          font-size: 48px;
+        }
+        .format p {
+          font-size: 16px;
+        }
+        .format a {
+          font-size: 20px;
+        }
+        .format div {
+          width: 90%;
+        }
+        .learn h2 {
+          font-size: 48px;
+        }
+      }
     }
   }
+  /* smartphone  */
+  @media screen and (max-width: 991px) {
+    header {
+      min-width: 320px;
+      padding: 50px;
+      padding-bottom: 0px;
+    }
+    header .logo {
+      width: 52px;
+      height: 31px;
+    }
+    .banner {
+      padding: 50px;
+      padding-top: 0px;
+      min-width: 320px;
+      .calendar ul {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+      .calendar li {
+        margin-right: 11px;
+      }
+      .calendar img {
+        width: 10px;
+        margin-right: 6px;
+      }
+      .calendar {
+        margin-bottom: 30px;
+      }
+      .banner-item {
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+      }
+      .banner-text h1 {
+        width: 100%;
+        font-size: 37px;
+      }
+      .banner-text p {
+        font-size: 14px;
+        width: 212px;
+      }
+      .banner-img {
+        width: 100%;
+      }
+      .banner-img img {
+        width: 141px;
+        height: 175px;
+      }
+      .aphorism-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .aphorism {
+        width: 225px;
+        height: 93px;
+        font-size: 11px;
+        padding: 8px 12px;
+        margin-top: 20px;
+      }
+      .aphorism .author {
+        font-size: 10px;
+        margin-top: 7px;
+        margin-left: 87px;
+      }
+    }
+    .course-info {
+      word-wrap: break-word;
+      h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .price {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      .course-description {
+        gap: 30px;
+      }
+      .course-level,
+      .course-access {
+        width: 50%;
+        min-width: 130px;
+      }
+      .first-paragraph {
+        /* margin-bottom: 10px; */
+        font-size: 14px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    footer {
+      word-wrap: break-word;
+      .social-icons img {
+        height: 20px;
+      }
+      .footer-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer-left {
+        margin-bottom: 25px;
+      }
+    }
+
+    .program-course-items-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .about-course {
+      min-width: 320px;
+      .container {
+        padding: 50px;
+      }
+      .container h1 {
+        font-size: 30px;
+      }
+      .course-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .course-content img {
+        width: 40%;
+        margin-bottom: 10px;
+      }
+      .course-content p {
+        font-size: 16px;
+      }
+      .description {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .duration-container img {
+        display: none;
+      }
+      .duration {
+        flex-wrap: wrap;
+      }
+      .duration p {
+        font-size: 16px;
+      }
+      .duration > div {
+        width: 140px;
+      }
+    }
+    .format-learn {
+      padding: 50px;
+      .format {
+        flex-direction: column;
+        width: 100%;
+      }
+      .format-container {
+        margin-bottom: 50px;
+      }
+
+      .format-container h2 {
+        font-size: 40px;
+      }
+      .format p {
+        font-size: 16px;
+      }
+      .format a {
+        font-size: 20px;
+      }
+      .format div {
+        width: 90%;
+      }
+      .learn h2 {
+        font-size: 40px;
+      }
+      .learn-list ul li {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+/* desktop */
+.feedback{
+  background-color: #efefef;
+  padding: 50px 100px;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 55px;
+  }
+  
+  .test {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width:65%;
+    margin: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: 0.5s ease-in-out;
+    
+  }
+  .test:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+  
+
+
+  .text {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 20px;
+  }
+
+  .avatar {
+    margin-right: 15px;
+  }
+
+   .avatar img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .author {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+  }
+  
+  .author strong {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30.42px;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 31px;
+    margin-top:40px;
+    }
+
+  .foot {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+}
+
+
+
+/* tablet */
+@media screen and (max-width: 1280px) {
+  .feedback {
+    .author strong {
+      font-size: 20px;
+    }
+    .text {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 44px;
+    }
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      margin-top:20px;
+    }
+   
+  }
+  
 }
 
 /* smartphone  */
-@media screen and (max-width: 991px) {
-
-  .program-course-items-container{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-  }
-}
-
-  .about-course {
-    min-width: 320px;
-    .container h1 {
-      font-size: 30px;
+@media screen and (max-width: 992px) {
+  .feedback {
+    padding: 70px;
+    
+    .test {
+      width:100%;
     }
-    .course-content {
-      display: flex;
-      flex-direction: column;
-    }
-    .course-content img {
-      margin-bottom: 10px;
-    }
-    .course-content p {
-      font-size: 16px;
-    }
-    .description {
-      width: 100%;
+    h2 {
+      font-size: 38px;
       margin-bottom: 20px;
     }
-    .duration-container img {
-      display: none;
-    }
-    .duration {
-      flex-wrap: wrap;
-    }
-    .duration p {
+    .text {
       font-size: 16px;
     }
-    .duration > div {
-      width: 140px;
+    .author strong {
+      font-size: 20px;
     }
+   
+    
   }
 }
+
 
