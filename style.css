@@ -16,22 +16,19 @@ h6 {
   font-family: "Roboto Slab", sans-serif;
 }
 /* desktop */
-body{
-  height: 5000px;
-}
+
 header{
-  margin-left: 121px;
-  margin-top: 21px;
+  padding: 50px;
   .logo{
     width: 112px;
     height: 66px;
     margin: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 3%;
   }
 
 }
 .banner{
-  margin-left: 121px;
+  padding: 50px;
   .calendar ul{
     list-style-type: none;
     font-size: 20px;
@@ -56,24 +53,27 @@ header{
     align-items: center;
   }
   .banner-text{
-    width: 50%;
+    width: 60%;
   }
   .banner-text h1{
     font-size: 80px;
   }
   .banner-text p{
-    font-size: 20px;
-    width: 414px;
+    font-size: 23px;
   }
   .banner-img{
     align-items: center;
-    width: 50%;
-    margin-left: 140px;
+    width: 30%;
   }
   .banner-img img{
     width: 304px;
     height: 356px;
-    
+    margin: auto;
+  }
+  .aphorism-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .aphorism{
     background-color: #1E4681;
@@ -84,8 +84,7 @@ header{
     font-size: 25px;
     color: white;
     padding: 19px 27px;
-    margin-top: 177px;
-    margin-left: 288px;
+    margin-top: 100px;
   
   }
   .aphorism .author{
@@ -100,17 +99,16 @@ header{
 /* tablet */
 @media screen and (max-width: 1280px) {
   header{
-    margin-left: 70px;
-  }
-  header .logo{
-    margin-bottom: 58px;
+    padding: 50px;
+    .logo{
     width: 65px;
     height: 38px;
+    }
   }
   .banner{
-    margin-left: 70px;
+    padding: 50px;
     .calendar ul{
-      font-size: 12px;
+      font-size: 15px;
       margin-bottom: 15px;
     }
     .calendar li{
@@ -118,7 +116,9 @@ header{
     }
     .calendar img{
       width: 12px;
-      margin-right: 8px;
+    }
+    .calendar{
+      margin-bottom: -20px;
     }
     .banner-text h1{
       font-size: 46px;
@@ -138,7 +138,6 @@ header{
       font-size: 14px;
       padding: 12px 15px;
       margin-top: 114px;
-      margin-left: 182px;
     
     }
     .aphorism .author{
@@ -151,21 +150,20 @@ header{
 }
 
 /* smartphone  */
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 990px) {
   header{
     min-width: 320px;
-    margin-left: 35px;
+    padding: 50px;
   }
   header .logo{
-    margin-bottom: 45px;
     width: 52px;
     height: 31px;
   }
   .banner{
+    padding: 50px;
     min-width: 320px;
-    margin-left: 35px;
     .calendar ul{
-      font-size: 10px;
+      font-size: 13px;
       margin-bottom: 8px;
     }
     .calendar li{
@@ -175,11 +173,15 @@ header{
       width: 10px;
       margin-right: 6px;
     }
+    .calendar{
+      margin-bottom: 30px;
+    }
     .banner-item{
-      /* justify-content: flex-start;
+      justify-content: flex-start;
       align-items: start;
-      flex-direction: column; */
-      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      
     }
     .banner-text h1{
       width: 100%;
@@ -200,6 +202,7 @@ header{
     .aphorism-container{
       display: flex;
       justify-content: center;
+      align-items: center;
     }
     .aphorism{
       width: 225px;
