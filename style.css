@@ -77,10 +77,61 @@ h6 {
 
 h3.course-item-header {
   margin-bottom: 5%;
+.about-course {
+  .container {
+    padding: 50px;
+  }
+  .container h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  .course-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .description {
+    width: 60%;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .course-content img {
+    width: 25%;
+  }
+  .duration-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    gap: 70px;
+  }
+  .duration {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 95px;
+  }
+  .duration > div {
+    width: 160px;
+  }
+  .duration-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .duration-container p {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .duration-container img {
+    width: 20%;
+  }
+
 }
 
 /* tablet */
 @media screen and (max-width: 1280px) {
+
   .program-course-container {
     .program-course-header {
       font-size: 32px;
@@ -104,14 +155,68 @@ h3.course-item-header {
     }
     .course-item-bottom p{
       font-size: 14px;
+
+  .about-course {
+    .container h1 {
+      font-size: 48px;
+    }
+    .description p {
+      font-size: 20px;
+    }
+    .duration-container {
+      width: 90%;
+      gap: 70px;
+    }
+    .duration {
+      gap: 50px;
+    }
+    .duration h3 {
+      font-size: 20px;
+
     }
   }
 }
 
 /* smartphone  */
 @media screen and (max-width: 991px) {
+
   .program-course-items-container{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
   }
 }
+
+  .about-course {
+    min-width: 320px;
+    .container h1 {
+      font-size: 30px;
+    }
+    .course-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .course-content img {
+      margin-bottom: 10px;
+    }
+    .course-content p {
+      font-size: 16px;
+    }
+    .description {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .duration-container img {
+      display: none;
+    }
+    .duration {
+      flex-wrap: wrap;
+    }
+    .duration p {
+      font-size: 16px;
+    }
+    .duration > div {
+      width: 140px;
+    }
+  }
+}
+
