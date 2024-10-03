@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+/* desktop */
+
+.program-course-container {
+  width: 100%;
+  margin: auto;
+  min-width: 320px;
+}
+
+.program-course-container {
+  .wrapper {
+    padding: 50px;
+  }
+  .program-course-header {
+    font-size: 55px;
+    margin-bottom: 10%;
+  }
+
+  .course-item {
+    width: 399px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    border-radius: 35px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .course-item:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px; */
+  }
+
+  .course-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-item-bottom {
+    padding-top: 15px;
+    padding: 25px;
+  }
+
+}
+.program-course-items-container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.course-item-bottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h3.course-item-header {
+  margin-bottom: 5%;
+.about-course {
+  .container {
+    padding: 50px;
+  }
+  .container h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+  .course-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .description {
+    width: 60%;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .course-content img {
+    width: 25%;
+  }
+  .duration-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    gap: 70px;
+  }
+  .duration {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 95px;
+  }
+  .duration > div {
+    width: 160px;
+  }
+  .duration-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .duration-container p {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .duration-container img {
+    width: 20%;
+  }
+
+}
+
+/* tablet */
+@media screen and (max-width: 1280px) {
+
+  .program-course-container {
+    .program-course-header {
+      font-size: 32px;
+      margin-bottom: 10%;
+    }
+
+    .course-item {
+      width: 100%;
+    }
+
+    .course-item-top img {
+      width: 100%;
+    }
+
+    .course-item-bottom{
+      padding-top: 5px;
+    }
+
+    .course-item-bottom h3{
+      font-size: 17px;
+    }
+    .course-item-bottom p{
+      font-size: 14px;
+
+  .about-course {
+    .container h1 {
+      font-size: 48px;
+    }
+    .description p {
+      font-size: 20px;
+    }
+    .duration-container {
+      width: 90%;
+      gap: 70px;
+    }
+    .duration {
+      gap: 50px;
+    }
+    .duration h3 {
+      font-size: 20px;
+
+    }
+  }
+}
+
+/* smartphone  */
+@media screen and (max-width: 991px) {
+
+  .program-course-items-container{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+}
+
+  .about-course {
+    min-width: 320px;
+    .container h1 {
+      font-size: 30px;
+    }
+    .course-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .course-content img {
+      margin-bottom: 10px;
+    }
+    .course-content p {
+      font-size: 16px;
+    }
+    .description {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .duration-container img {
+      display: none;
+    }
+    .duration {
+      flex-wrap: wrap;
+    }
+    .duration p {
+      font-size: 16px;
+    }
+    .duration > div {
+      width: 140px;
+    }
+  }
+}
+
