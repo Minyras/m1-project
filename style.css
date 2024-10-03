@@ -16,9 +16,10 @@ h6 {
 }
 
 /* desktop */
+/* section course-info */
 .course-info {
 	background-color: #9dc9c8;
-	height: 100vh;
+	/* height: 100vh; */
 	padding: 160px 50px;
 	display: flex;
 	flex-direction: column;
@@ -91,11 +92,51 @@ footer {
 }
 /* tablet */
 @media screen and (max-width: 1280px) {
+	.course-info {
+		padding: 100px 50px;
+	}
 }
 
 /* smartphone  */
 @media screen and (max-width: 991px) {
+	.course-info {
+		word-wrap: break-word;
+		h2 {
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-weight: 800;
+		}
+		.price {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+		.course-description {
+			gap: 30px;
+		}
+		.course-level,
+		.course-access {
+			width: 50%;
+			min-width: 130px;
+		}
+		.first-paragraph {
+			/* margin-bottom: 10px; */
+			font-size: 14px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
 	footer {
-		flex-wrap: wrap;
+		word-wrap: break-word;
+		.social-icons img {
+			height: 20px;
+		}
+		.footer-container {
+			flex-direction: column;
+			gap: 20px;
+		}
+		.footer-left {
+			margin-bottom: 25px;
+		}
 	}
 }
