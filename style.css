@@ -298,6 +298,7 @@ h3.course-item-header {
       rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
       rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 
+
     cursor: pointer;
   }
   .format p {
@@ -323,6 +324,35 @@ h3.course-item-header {
     transition: 0.25s;
   }
 }
+
+
+
+    cursor: pointer;
+  }
+  .format p {
+    font-size: 18px;
+  }
+  .format a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .learn h2 {
+    font-size: 55px;
+    margin-bottom: 60px;
+  }
+  .learn-list ul li {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .learn-list ul li:hover {
+    cursor: pointer;
+    color: rgba(224, 26, 151, 0.6);
+    transition: 0.25s;
+  }
+}
+
 
 .social-icons img:hover {
   transform: rotate(360deg);
@@ -484,6 +514,7 @@ footer {
         }
       }
     }
+
   }
   /* smartphone  */
   @media screen and (max-width: 991px) {
@@ -795,10 +826,189 @@ h6 {
     }
     .author strong {
       font-size: 20px;
+
+  }
+  /* smartphone  */
+  @media screen and (max-width: 991px) {
+    header {
+      min-width: 320px;
+      padding: 50px;
+      padding-bottom: 0px;
+    }
+    header .logo {
+      width: 52px;
+      height: 31px;
+    }
+    .banner {
+      padding: 50px;
+      padding-top: 0px;
+      min-width: 320px;
+      .calendar ul {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+      .calendar li {
+        margin-right: 11px;
+      }
+      .calendar img {
+        width: 10px;
+        margin-right: 6px;
+      }
+      .calendar {
+        margin-bottom: 30px;
+      }
+      .banner-item {
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+      }
+      .banner-text h1 {
+        width: 100%;
+        font-size: 37px;
+      }
+      .banner-text p {
+        font-size: 14px;
+        width: 212px;
+      }
+      .banner-img {
+        width: 100%;
+      }
+      .banner-img img {
+        width: 141px;
+        height: 175px;
+      }
+      .aphorism-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .aphorism {
+        width: 225px;
+        height: 93px;
+        font-size: 11px;
+        padding: 8px 12px;
+        margin-top: 20px;
+      }
+      .aphorism .author {
+        font-size: 10px;
+        margin-top: 7px;
+        margin-left: 87px;
+      }
+    }
+    .course-info {
+      word-wrap: break-word;
+      h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .price {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      .course-description {
+        gap: 30px;
+      }
+      .course-level,
+      .course-access {
+        width: 50%;
+        min-width: 130px;
+      }
+      .first-paragraph {
+        /* margin-bottom: 10px; */
+        font-size: 14px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    footer {
+      word-wrap: break-word;
+      .social-icons img {
+        height: 20px;
+      }
+      .footer-container {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer-left {
+        margin-bottom: 25px;
+      }
+    }
+
+    .program-course-items-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .about-course {
+      min-width: 320px;
+      .container {
+        padding: 50px;
+      }
+      .container h1 {
+        font-size: 30px;
+      }
+      .course-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .course-content img {
+        width: 40%;
+        margin-bottom: 10px;
+      }
+      .course-content p {
+        font-size: 16px;
+      }
+      .description {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .duration-container img {
+        display: none;
+      }
+      .duration {
+        flex-wrap: wrap;
+      }
+      .duration p {
+        font-size: 16px;
+      }
+      .duration > div {
+        width: 140px;
+      }
+    }
+    .format-learn {
+      padding: 50px;
+      .format {
+        flex-direction: column;
+        width: 100%;
+      }
+      .format-container {
+        margin-bottom: 50px;
+      }
+
+      .format-container h2 {
+        font-size: 40px;
+      }
+      .format p {
+        font-size: 16px;
+      }
+      .format a {
+        font-size: 20px;
+      }
+      .format div {
+        width: 90%;
+      }
+      .learn h2 {
+        font-size: 40px;
+      }
+      .learn-list ul li {
+        font-size: 16px;
+      }
+
     }
    
     
   }
 }
-
 
