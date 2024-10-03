@@ -17,70 +17,67 @@ h6 {
 }
 /* desktop */
 
-
-header{
+header {
   padding: 50px;
   padding-bottom: 0px;
-  .logo{
+  .logo {
     width: 112px;
     height: 66px;
     margin: 0px;
     margin-bottom: 3%;
   }
-
 }
-.banner{
+.banner {
   padding: 50px;
   padding-top: 0px;
-  .calendar ul{
+  .calendar ul {
     list-style-type: none;
     font-size: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 29px;
-  
-  }.calendar li{
+  }
+  .calendar li {
     margin-right: 25px;
     display: flex;
     justify-content: baseline;
   }
-  .calendar img{
+  .calendar img {
     width: 22px;
     margin-right: 8px;
-
   }
-  .banner-item{
+  .banner-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .banner-text{
+  .banner-text {
     width: 60%;
   }
-  .banner-text h1{
+  .banner-text h1 {
     font-size: 80px;
   }
-  .banner-text p{
+  .banner-text p {
     font-size: 23px;
   }
-  .banner-img{
+  .banner-img {
     align-items: center;
     width: 30%;
   }
-  .banner-img img{
+  .banner-img img {
     width: 304px;
     height: 356px;
     margin: auto;
   }
-  .aphorism-container{
+  .aphorism-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .aphorism{
-    background-color: #1E4681;
-    border: 1px solid #1E4681;
+  .aphorism {
+    background-color: #1e4681;
+    border: 1px solid #1e4681;
     border-radius: 4px;
     width: 483.3px;
     height: 200px;
@@ -88,145 +85,13 @@ header{
     color: white;
     padding: 19px 27px;
     margin-top: 100px;
-  
   }
-  .aphorism .author{
+  .aphorism .author {
     font-size: 20px;
     margin-top: 30px;
     margin-left: 184px;
   }
 }
-
-
-
-/* tablet */
-@media screen and (max-width: 1280px) {
-  header{
-    padding: 50px;
-    padding-bottom: 0px;
-    .logo{
-    width: 65px;
-    height: 38px;
-    }
-  }
-  .banner{
-    padding: 50px;
-    padding-top: 0px;
-    .calendar ul{
-      font-size: 15px;
-      margin-bottom: 15px;
-    }
-    .calendar li{
-      margin-right: 14px;
-    }
-    .calendar img{
-      width: 12px;
-    }
-    .calendar{
-      margin-bottom: -20px;
-    }
-    .banner-text h1{
-      font-size: 46px;
-    }
-    .banner-text p{
-      font-size: 12px;
-      width: 264px;
-    }
-    .banner-img img{
-      width: 176px;
-      height: 206px;
-      
-    }
-    .aphorism{
-      width: 280px;
-      height: 115px;
-      font-size: 14px;
-      padding: 12px 15px;
-      margin-top: 40px;
-    
-    }
-    .aphorism .author{
-      font-size: 12px;
-      margin-top: 8px;
-      margin-left: 108px;
-    }
-
-  }
-}
-
-/* smartphone  */
-@media screen and (max-width: 990px) {
-  header{
-    min-width: 320px;
-    padding: 50px;
-    padding-bottom: 0px;
-  }
-  header .logo{
-    width: 52px;
-    height: 31px;
-  }
-  .banner{
-    padding: 50px;
-    padding-top: 0px;
-    min-width: 320px;
-    .calendar ul{
-      font-size: 13px;
-      margin-bottom: 8px;
-    }
-    .calendar li{
-      margin-right: 11px;
-    }
-    .calendar img{
-      width: 10px;
-      margin-right: 6px;
-    }
-    .calendar{
-      margin-bottom: 30px;
-    }
-    .banner-item{
-      justify-content: flex-start;
-      align-items: start;
-      flex-direction: column;
-      width: 100%;
-      
-    }
-    .banner-text h1{
-      width: 100%;
-      font-size: 37px;
-    }
-    .banner-text p{
-      font-size: 10px;
-      width: 212px;
-    }
-    .banner-img{
-      width: 100%;
-    }
-    .banner-img img{
-      width: 141px;
-      height: 175px;
-      
-    }
-    .aphorism-container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .aphorism{
-      width: 225px;
-      height: 93px;
-      font-size: 11px;
-      padding: 8px 12px;
-      margin-top: 20px;
-    }
-    .aphorism .author{
-      font-size: 10px;
-      margin-top: 7px;
-      margin-left: 87px;
-    }
-
-  }
-
-
 /* section course-info */
 .course-info {
   background-color: #9dc9c8;
@@ -507,6 +372,54 @@ footer {
 }
 /* tablet */
 @media screen and (max-width: 1280px) {
+  header {
+    padding: 50px;
+    padding-bottom: 0px;
+    .logo {
+      width: 65px;
+      height: 38px;
+    }
+  }
+  .banner {
+    padding: 50px;
+    padding-top: 0px;
+    .calendar ul {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .calendar li {
+      margin-right: 14px;
+    }
+    .calendar img {
+      width: 12px;
+    }
+    .calendar {
+      margin-bottom: -20px;
+    }
+    .banner-text h1 {
+      font-size: 46px;
+    }
+    .banner-text p {
+      font-size: 12px;
+      width: 264px;
+    }
+    .banner-img img {
+      width: 176px;
+      height: 206px;
+    }
+    .aphorism {
+      width: 280px;
+      height: 115px;
+      font-size: 14px;
+      padding: 12px 15px;
+      margin-top: 40px;
+    }
+    .aphorism .author {
+      font-size: 12px;
+      margin-top: 8px;
+      margin-left: 108px;
+    }
+  }
   .course-info {
     padding: 100px 50px;
   }
@@ -574,6 +487,72 @@ footer {
   }
   /* smartphone  */
   @media screen and (max-width: 991px) {
+    header {
+      min-width: 320px;
+      padding: 50px;
+      padding-bottom: 0px;
+    }
+    header .logo {
+      width: 52px;
+      height: 31px;
+    }
+    .banner {
+      padding: 50px;
+      padding-top: 0px;
+      min-width: 320px;
+      .calendar ul {
+        font-size: 13px;
+        margin-bottom: 8px;
+      }
+      .calendar li {
+        margin-right: 11px;
+      }
+      .calendar img {
+        width: 10px;
+        margin-right: 6px;
+      }
+      .calendar {
+        margin-bottom: 30px;
+      }
+      .banner-item {
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+      }
+      .banner-text h1 {
+        width: 100%;
+        font-size: 37px;
+      }
+      .banner-text p {
+        font-size: 14px;
+        width: 212px;
+      }
+      .banner-img {
+        width: 100%;
+      }
+      .banner-img img {
+        width: 141px;
+        height: 175px;
+      }
+      .aphorism-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .aphorism {
+        width: 225px;
+        height: 93px;
+        font-size: 11px;
+        padding: 8px 12px;
+        margin-top: 20px;
+      }
+      .aphorism .author {
+        font-size: 10px;
+        margin-top: 7px;
+        margin-left: 87px;
+      }
+    }
     .course-info {
       word-wrap: break-word;
       h2 {
@@ -685,5 +664,4 @@ footer {
       }
     }
   }
-
 }
