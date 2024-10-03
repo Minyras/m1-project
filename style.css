@@ -16,7 +16,74 @@ h6 {
   font-family: "Roboto Slab", sans-serif;
 }
 /* desktop */
+.feedback {
+  background-color: #efefef;
+  padding: 50px 100px;
 
+  h2 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 55px;
+  }
+
+  .test {
+    box-shadow: rgba(0, 0, 0, 0.305) 0px 5px 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 65%;
+    margin: 10px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+    transition: 0.5s ease-in-out;
+  }
+  .test:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+      rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 20px;
+  }
+
+  .avatar {
+    margin-right: 15px;
+  }
+
+  .avatar img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .author {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+  }
+
+  .author strong {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30.42px;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 31px;
+    margin-top: 40px;
+  }
+
+  .foot {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
 header {
   padding: 50px;
   padding-bottom: 0px;
@@ -37,6 +104,8 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 29px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   .calendar li {
     margin-right: 25px;
@@ -66,8 +135,7 @@ header {
     width: 30%;
   }
   .banner-img img {
-    width: 304px;
-    height: 356px;
+    width: 60%;
     margin: auto;
   }
   .aphorism-container {
@@ -79,8 +147,7 @@ header {
     background-color: #1e4681;
     border: 1px solid #1e4681;
     border-radius: 4px;
-    width: 483.3px;
-    height: 200px;
+    width: 40%;
     font-size: 25px;
     color: white;
     padding: 19px 27px;
@@ -89,7 +156,9 @@ header {
   .aphorism .author {
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 184px;
+  }
+  .author {
+    text-align: right;
   }
 }
 /* section course-info */
@@ -157,9 +226,6 @@ header {
   width: 100%;
   margin: auto;
   min-width: 320px;
-}
-
-.program-course-container {
   .wrapper {
     padding: 50px;
   }
@@ -297,8 +363,6 @@ h3.course-item-header {
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
       rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
       rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-
-
     cursor: pointer;
   }
   .format p {
@@ -324,35 +388,6 @@ h3.course-item-header {
     transition: 0.25s;
   }
 }
-
-
-
-    cursor: pointer;
-  }
-  .format p {
-    font-size: 18px;
-  }
-  .format a {
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 22px;
-  }
-  .learn h2 {
-    font-size: 55px;
-    margin-bottom: 60px;
-  }
-  .learn-list ul li {
-    font-size: 20px;
-    line-height: 2;
-  }
-  .learn-list ul li:hover {
-    cursor: pointer;
-    color: rgba(224, 26, 151, 0.6);
-    transition: 0.25s;
-  }
-}
-
 
 .social-icons img:hover {
   transform: rotate(360deg);
@@ -402,12 +437,27 @@ footer {
 }
 /* tablet */
 @media screen and (max-width: 1280px) {
+  .feedback {
+    .author strong {
+      font-size: 20px;
+    }
+    .text {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 44px;
+    }
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      margin-top: 20px;
+    }
+  }
   header {
     padding: 50px;
     padding-bottom: 0px;
     .logo {
-      width: 65px;
-      height: 38px;
+      width: 90px;
     }
   }
   .banner {
@@ -419,6 +469,7 @@ footer {
     }
     .calendar li {
       margin-right: 14px;
+      font-size: 18px;
     }
     .calendar img {
       width: 12px;
@@ -426,28 +477,26 @@ footer {
     .calendar {
       margin-bottom: -20px;
     }
+    .banner-text {
+      width: 60%;
+    }
     .banner-text h1 {
-      font-size: 46px;
+      font-size: 60px;
     }
     .banner-text p {
-      font-size: 12px;
-      width: 264px;
+      font-size: 18px;
     }
     .banner-img img {
-      width: 176px;
-      height: 206px;
+      width: 60%;
     }
     .aphorism {
-      width: 280px;
-      height: 115px;
-      font-size: 14px;
+      font-size: 18px;
       padding: 12px 15px;
       margin-top: 40px;
     }
     .aphorism .author {
-      font-size: 12px;
-      margin-top: 8px;
-      margin-left: 108px;
+      font-size: 16px;
+      margin-top: 20px;
     }
   }
   .course-info {
@@ -514,501 +563,211 @@ footer {
         }
       }
     }
-
   }
-  /* smartphone  */
-  @media screen and (max-width: 991px) {
-    header {
-      min-width: 320px;
-      padding: 50px;
-      padding-bottom: 0px;
-    }
-    header .logo {
-      width: 52px;
-      height: 31px;
-    }
-    .banner {
-      padding: 50px;
-      padding-top: 0px;
-      min-width: 320px;
-      .calendar ul {
-        font-size: 13px;
-        margin-bottom: 8px;
-      }
-      .calendar li {
-        margin-right: 11px;
-      }
-      .calendar img {
-        width: 10px;
-        margin-right: 6px;
-      }
-      .calendar {
-        margin-bottom: 30px;
-      }
-      .banner-item {
-        justify-content: flex-start;
-        align-items: start;
-        flex-direction: column;
-        width: 100%;
-      }
-      .banner-text h1 {
-        width: 100%;
-        font-size: 37px;
-      }
-      .banner-text p {
-        font-size: 14px;
-        width: 212px;
-      }
-      .banner-img {
-        width: 100%;
-      }
-      .banner-img img {
-        width: 141px;
-        height: 175px;
-      }
-      .aphorism-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .aphorism {
-        width: 225px;
-        height: 93px;
-        font-size: 11px;
-        padding: 8px 12px;
-        margin-top: 20px;
-      }
-      .aphorism .author {
-        font-size: 10px;
-        margin-top: 7px;
-        margin-left: 87px;
-      }
-    }
-    .course-info {
-      word-wrap: break-word;
-      h2 {
-        margin-bottom: 20px;
-        font-size: 30px;
-        font-weight: 800;
-      }
-      .price {
-        font-size: 40px;
-        margin-bottom: 20px;
-      }
-      .course-description {
-        gap: 30px;
-      }
-      .course-level,
-      .course-access {
-        width: 50%;
-        min-width: 130px;
-      }
-      .first-paragraph {
-        /* margin-bottom: 10px; */
-        font-size: 14px;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
-    footer {
-      word-wrap: break-word;
-      .social-icons img {
-        height: 20px;
-      }
-      .footer-container {
-        flex-direction: column;
-        gap: 20px;
-      }
-      .footer-left {
-        margin-bottom: 25px;
-      }
-    }
-
-    .program-course-items-container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-    .about-course {
-      min-width: 320px;
-      .container {
-        padding: 50px;
-      }
-      .container h1 {
-        font-size: 30px;
-      }
-      .course-content {
-        display: flex;
-        flex-direction: column;
-      }
-      .course-content img {
-        width: 40%;
-        margin-bottom: 10px;
-      }
-      .course-content p {
-        font-size: 16px;
-      }
-      .description {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      .duration-container img {
-        display: none;
-      }
-      .duration {
-        flex-wrap: wrap;
-      }
-      .duration p {
-        font-size: 16px;
-      }
-      .duration > div {
-        width: 140px;
-      }
-    }
-    .format-learn {
-      padding: 50px;
-      .format {
-        flex-direction: column;
-        width: 100%;
-      }
-      .format-container {
-        margin-bottom: 50px;
-      }
-
-      .format-container h2 {
-        font-size: 40px;
-      }
-      .format p {
-        font-size: 16px;
-      }
-      .format a {
-        font-size: 20px;
-      }
-      .format div {
-        width: 90%;
-      }
-      .learn h2 {
-        font-size: 40px;
-      }
-      .learn-list ul li {
-        font-size: 16px;
-      }
-    }
-  }
-}
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto Slab", sans-serif;
-}
-
-/* desktop */
-.feedback{
-  background-color: #efefef;
-  padding: 50px 100px;
-  min-height: 100vh;
-
-  h2 {
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 55px;
-  }
-  
-  .test {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
-    width:65%;
-    margin: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: 0.5s ease-in-out;
-    
-  }
-  .test:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  }
-  
-
-
-  .text {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    padding: 20px;
-  }
-
-  .avatar {
-    margin-right: 15px;
-  }
-
-   .avatar img {
-    width: 150px;
-    border-radius: 50%;
-  }
-  
-  .author {
-    display: flex;
-    align-items: left;
-    flex-direction: column;
-  }
-  
-  .author strong {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30.42px;
-  }
-  
-  .social-icon {
-    width: 32px;
-    height: 31px;
-    margin-top:40px;
-    }
-
-  .foot {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  
-}
-
-
-
-/* tablet */
-@media screen and (max-width: 1280px) {
-  .feedback {
-    .author strong {
-      font-size: 20px;
-    }
-    .text {
-      font-size: 16px;
-    }
-    h2 {
-      font-size: 44px;
-    }
-    .social-icon {
-      width: 28px;
-      height: 28px;
-      margin-top:20px;
-    }
-   
-  }
-  
 }
 
 /* smartphone  */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .feedback {
     padding: 70px;
-    
+
     .test {
-      width:100%;
+      width: 100%;
     }
     h2 {
       font-size: 38px;
       margin-bottom: 20px;
     }
+    .foot {
+      flex-wrap: wrap;
+    }
     .text {
       font-size: 16px;
     }
     .author strong {
       font-size: 20px;
-
+    }
   }
-  /* smartphone  */
-  @media screen and (max-width: 991px) {
-    header {
-      min-width: 320px;
-      padding: 50px;
-      padding-bottom: 0px;
+  header {
+    min-width: 320px;
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+  header .logo {
+    width: 70px;
+  }
+  .banner {
+    padding: 50px;
+    padding-top: 0px;
+    min-width: 320px;
+    .calendar ul {
+      font-size: 13px;
+      margin-bottom: 8px;
     }
-    header .logo {
-      width: 52px;
-      height: 31px;
+    .calendar li {
+      font-size: 16px;
+      margin-right: 11px;
     }
-    .banner {
-      padding: 50px;
-      padding-top: 0px;
-      min-width: 320px;
-      .calendar ul {
-        font-size: 13px;
-        margin-bottom: 8px;
-      }
-      .calendar li {
-        margin-right: 11px;
-      }
-      .calendar img {
-        width: 10px;
-        margin-right: 6px;
-      }
-      .calendar {
-        margin-bottom: 30px;
-      }
-      .banner-item {
-        justify-content: flex-start;
-        align-items: start;
-        flex-direction: column;
-        width: 100%;
-      }
-      .banner-text h1 {
-        width: 100%;
-        font-size: 37px;
-      }
-      .banner-text p {
-        font-size: 14px;
-        width: 212px;
-      }
-      .banner-img {
-        width: 100%;
-      }
-      .banner-img img {
-        width: 141px;
-        height: 175px;
-      }
-      .aphorism-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .aphorism {
-        width: 225px;
-        height: 93px;
-        font-size: 11px;
-        padding: 8px 12px;
-        margin-top: 20px;
-      }
-      .aphorism .author {
-        font-size: 10px;
-        margin-top: 7px;
-        margin-left: 87px;
-      }
+    .calendar img {
+      width: 10px;
+      margin-right: 6px;
     }
-    .course-info {
-      word-wrap: break-word;
-      h2 {
-        margin-bottom: 20px;
-        font-size: 30px;
-        font-weight: 800;
-      }
-      .price {
-        font-size: 40px;
-        margin-bottom: 20px;
-      }
-      .course-description {
-        gap: 30px;
-      }
-      .course-level,
-      .course-access {
-        width: 50%;
-        min-width: 130px;
-      }
-      .first-paragraph {
-        /* margin-bottom: 10px; */
-        font-size: 14px;
-      }
-      p {
-        font-size: 18px;
-      }
+    .calendar {
+      margin-bottom: 30px;
     }
-    footer {
-      word-wrap: break-word;
-      .social-icons img {
-        height: 20px;
-      }
-      .footer-container {
-        flex-direction: column;
-        gap: 20px;
-      }
-      .footer-left {
-        margin-bottom: 25px;
-      }
+    .banner-item {
+      justify-content: flex-start;
+      align-items: start;
+      flex-direction: column;
+      width: 100%;
     }
-
-    .program-course-items-container {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .banner-text {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .banner-text h1 {
+      width: 100%;
+      font-size: 40px;
+    }
+    .banner-text p {
+      font-size: 18px;
+    }
+    .banner-img {
+      width: 100%;
+    }
+    .banner-img img {
+      max-width: 230px;
+      width: 45%;
+    }
+    .banner-img {
+      text-align: end;
+    }
+    .aphorism-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .aphorism {
+      width: 60%;
+      max-width: 350px;
+      font-size: 14px;
+      padding: 8px 12px;
+      margin-top: 20px;
+    }
+    .aphorism .author {
+      font-size: 10px;
+      margin-top: 7px;
+    }
+  }
+  .course-info {
+    word-wrap: break-word;
+    h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    .price {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .course-description {
       gap: 30px;
     }
-    .about-course {
-      min-width: 320px;
-      .container {
-        padding: 50px;
-      }
-      .container h1 {
-        font-size: 30px;
-      }
-      .course-content {
-        display: flex;
-        flex-direction: column;
-      }
-      .course-content img {
-        width: 40%;
-        margin-bottom: 10px;
-      }
-      .course-content p {
-        font-size: 16px;
-      }
-      .description {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      .duration-container img {
-        display: none;
-      }
-      .duration {
-        flex-wrap: wrap;
-      }
-      .duration p {
-        font-size: 16px;
-      }
-      .duration > div {
-        width: 140px;
-      }
+    .course-level,
+    .course-access {
+      width: 50%;
+      min-width: 130px;
     }
-    .format-learn {
+    .first-paragraph {
+      /* margin-bottom: 10px; */
+      font-size: 14px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  footer {
+    word-wrap: break-word;
+    .social-icons img {
+      height: 20px;
+    }
+    .footer-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .footer-left {
+      margin-bottom: 25px;
+    }
+  }
+
+  .program-course-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  .about-course {
+    min-width: 320px;
+    .container {
       padding: 50px;
-      .format {
-        flex-direction: column;
-        width: 100%;
-      }
-      .format-container {
-        margin-bottom: 50px;
-      }
-
-      .format-container h2 {
-        font-size: 40px;
-      }
-      .format p {
-        font-size: 16px;
-      }
-      .format a {
-        font-size: 20px;
-      }
-      .format div {
-        width: 90%;
-      }
-      .learn h2 {
-        font-size: 40px;
-      }
-      .learn-list ul li {
-        font-size: 16px;
-      }
-
     }
-   
-    
+    .container h1 {
+      font-size: 30px;
+    }
+    .course-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .course-content img {
+      width: 40%;
+      margin-bottom: 10px;
+    }
+    .course-content p {
+      font-size: 16px;
+    }
+    .description {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .duration-container img {
+      display: none;
+    }
+    .duration {
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+    .duration p {
+      font-size: 16px;
+    }
+    .duration > div {
+      width: 140px;
+    }
+  }
+  .format-learn {
+    padding: 50px;
+    .format {
+      flex-direction: column;
+      width: 100%;
+    }
+    .format-container {
+      margin-bottom: 50px;
+    }
+
+    .format-container h2 {
+      font-size: 40px;
+    }
+    .format p {
+      font-size: 16px;
+    }
+    .format a {
+      font-size: 20px;
+    }
+    .format div {
+      width: 100%;
+    }
+    .learn h2 {
+      font-size: 40px;
+    }
+    .learn-list ul li {
+      font-size: 16px;
+    }
   }
 }
-
