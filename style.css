@@ -79,7 +79,7 @@ h3.course-item-header {
   margin-bottom: 5%;
 .about-course {
   .container {
-    padding: 50px;
+    padding: 50px 80px;
   }
   .container h1 {
     font-size: 55px;
@@ -91,6 +91,11 @@ h3.course-item-header {
     justify-content: space-between;
     margin-bottom: 50px;
   }
+  .course-content img:hover {
+    transform: scale(1.2);
+  }
+
+  .course-contentimg,
   .description {
     width: 60%;
     font-size: 24px;
@@ -98,6 +103,7 @@ h3.course-item-header {
   }
   .course-content img {
     width: 25%;
+    transition: transform 0.5s ease-in-out;
   }
   .duration-container {
     display: flex;
@@ -127,6 +133,59 @@ h3.course-item-header {
     width: 20%;
   }
 
+}
+.format-learn {
+  min-width: 320px;
+  padding: 100px 80px;
+  .format-container {
+    margin-bottom: 200px;
+  }
+  .format-container h2 {
+    font-size: 55px;
+    margin-bottom: 100px;
+  }
+  .format {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 80%;
+  }
+  .format div {
+    width: 50%;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+  }
+  .format div:hover {
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+      rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+    cursor: pointer;
+  }
+  .format p {
+    font-size: 18px;
+  }
+  .format a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .learn h2 {
+    font-size: 55px;
+    margin-bottom: 60px;
+  }
+  .learn-list ul li {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .learn-list ul li:hover {
+    cursor: pointer;
+    color: rgba(224, 26, 151, 0.6);
+    transition: 0.25s;
+  }
 }
 
 /* tablet */
@@ -175,6 +234,23 @@ h3.course-item-header {
 
     }
   }
+  .format-learn {
+    .format-container h2 {
+      font-size: 48px;
+    }
+    .format p {
+      font-size: 16px;
+    }
+    .format a {
+      font-size: 20px;
+    }
+    .format div {
+      width: 90%;
+    }
+    .learn h2 {
+      font-size: 48px;
+    }
+  }
 }
 
 /* smartphone  */
@@ -188,6 +264,9 @@ h3.course-item-header {
 
   .about-course {
     min-width: 320px;
+    .container {
+      padding: 50px;
+    }
     .container h1 {
       font-size: 30px;
     }
@@ -196,6 +275,7 @@ h3.course-item-header {
       flex-direction: column;
     }
     .course-content img {
+      width: 40%;
       margin-bottom: 10px;
     }
     .course-content p {
@@ -216,6 +296,35 @@ h3.course-item-header {
     }
     .duration > div {
       width: 140px;
+    }
+  }
+  .format-learn {
+    padding: 50px;
+    .format {
+      flex-direction: column;
+      width: 100%;
+    }
+    .format-container {
+      margin-bottom: 50px;
+    }
+
+    .format-container h2 {
+      font-size: 40px;
+    }
+    .format p {
+      font-size: 16px;
+    }
+    .format a {
+      font-size: 20px;
+    }
+    .format div {
+      width: 90%;
+    }
+    .learn h2 {
+      font-size: 40px;
+    }
+    .learn-list ul li {
+      font-size: 16px;
     }
   }
 }
