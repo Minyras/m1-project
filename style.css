@@ -141,7 +141,7 @@ header{
       height: 115px;
       font-size: 14px;
       padding: 12px 15px;
-      margin-top: 114px;
+      margin-top: 40px;
     
     }
     .aphorism .author{
@@ -215,7 +215,7 @@ header{
       height: 93px;
       font-size: 11px;
       padding: 8px 12px;
-    
+      margin-top: 20px;
     }
     .aphorism .author{
       font-size: 10px;
