@@ -1,9 +1,17 @@
 # m1-project
 
 # Layihə tələbləri
+<ul>
+  <li>
 Bütün boşluqlar, ölçülər və rənglər maket və tələblərə uyğun olmalıdır.
+  </li>
+  <li>
 Ölçü, boşluqlarda maket ilə cüzi fərqlərə yol verilir.  
+  </li>
+  <li>
 Səhifə bütün müasir brauzerlərdə düzgün göstərilməlidir.
+  </li>
+</ul>
 Səhifə adaptivdir və üç əsas variantda əlçatandır:
 Desktop - ekran ölçüsü 1280px-dən çox;
 tablet- ekran ölçüsü 992px-dən 1279px-ə qədər ;
