@@ -1,4 +1,4 @@
-# m1-project
+# Modul 1. Layihə "Kurs səhifəsinin layoutu"-nun tərtibi  
 
 # Layihə tələbləri
 <ul>
