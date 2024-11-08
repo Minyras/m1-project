@@ -13,7 +13,7 @@ CSS3: For styling and layout.
 Git: For version control.
 </li>
 </ol>
-###👤 Author
+### 👤 Author
 <ul>
   <li><a href="https://github.com/minyras" style="text-decoration: none;">minyras</a></li>
   <li><a href="https://github.com/iamperii" style="text-decoration: none;">iamperii</a></li>
