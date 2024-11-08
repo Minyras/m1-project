@@ -20,6 +20,6 @@ Git: For version control.
   <li><a href="https://github.com/khalilovmusa" style="text-decoration: none;">khalilovmusa</a></li>
   <li><a href="https://github.com/xeyalmemmedov" style="text-decoration: none;">xeyalmemmedov</a></li>
   <li><a href="https://github.com/shalbuzz" style="text-decoration: none;">shalbuzz</a></li>
+</ul>
   - [shalbuzz](https://github.com/shalbuzz)
 
-</ul>
