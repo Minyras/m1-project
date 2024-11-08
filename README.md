@@ -15,9 +15,9 @@ Git: For version control.
 </ol>
 ###👤 Author
 <ul>
-  <li><a href="https://github.com/minyras">minyras</a></li>
-  <li><a href="https://github.com/iamperii">iamperii</a></li>
-  <li><a href="https://github.com/khalilovmusa">khalilovmusa</a></li>
-  <li><a href="https://github.com/xeyalmemmedov">xeyalmemmedov</a></li>
-  <li><a href="https://github.com/shalbuzz">shalbuzz</a></li>
+  <li><a href="https://github.com/minyras" style="text-decoration: none;">minyras</a></li>
+  <li><a href="https://github.com/iamperii" style="text-decoration: none;">iamperii</a></li>
+  <li><a href="https://github.com/khalilovmusa" style="text-decoration: none;">khalilovmusa</a></li>
+  <li><a href="https://github.com/xeyalmemmedov" style="text-decoration: none;">xeyalmemmedov</a></li>
+  <li><a href="https://github.com/shalbuzz" style="text-decoration: none;">shalbuzz</a></li>
 </ul>
