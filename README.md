@@ -1,28 +1,38 @@
-# Modul 1. Layihə "Kurs səhifəsinin layoutu"-nun tərtibi  
+# 🎬 How to Watch a Movie - Project Layout 🎬
+Module 1 Project: Create the layout for the sales page of the "How to Watch a Movie" course based on the provided Figma design.
 
-# Layihə tələbləri
-<ul>
-  <li>
-Bütün boşluqlar, ölçülər və rənglər maket və tələblərə uyğun olmalıdır.
-  </li>
-  <li>
-Ölçü, boşluqlarda maket ilə cüzi fərqlərə yol verilir.  
-  </li>
-  <li>
-Səhifə bütün müasir brauzerlərdə düzgün göstərilməlidir.
-  </li>
-</ul>
-* Səhifə adaptivdir və üç əsas variantda əlçatandır:
-* Desktop - 
-  * ekran ölçüsü 1280px-dən çox;
-  * tablet- ekran ölçüsü 992px-dən 1279px-ə qədər ;
-smartfon - ekran ölçüsü 320px-dən 991px-ə qədər.
-Hər ekran seçimi çərçivəsində "rezin" layout, yəni elementlərin eni ekran eninə mütənasib olaraq dəyişir.
-Maketdə nəzərə alınmayan bütün interfeys qərarları proqramçı tərəfindən qəbul edilir.
-Layihə aşağıdakı kimi təşkil edilməlidir:
-HTML səhifəsi layihə qovluğunda olan xarici stil faylını istifadə edir;
-HTML daxili stil verilməsi yolverilməzdir;
-şəklləir ayrı bir qovluqda yerləşdirilir.
-Layihə Validator yoxlamasından keçməlidir.
-Düzgün layout semantikası müşahidə edilməlidir.
-Səhifə Kodu GitHub repozitoriyasında saxlanmalıdır.
+# 📋 Project Requirements
+Alignment & Precision
+
+All spacing, dimensions, and colors must align closely with the layout and project specifications.
+Minor deviations in spacing and positioning are acceptable.
+Browser Compatibility
+
+Ensure the page displays correctly in all modern browsers.
+Responsive Design
+
+The layout should adapt to the following screen sizes:
+Desktop: Screens wider than 1280px
+Tablet: Screens from 992px to 1279px
+Smartphone: Screens from 320px to 991px
+Fluid Layout
+
+Utilize a responsive layout with elements that adjust proportionally to the screen width.
+Flexible Interface Decisions
+
+Any design decisions not specified in the mockup are at the developer’s discretion.
+Project Structure
+
+Ensure a clean, organized file structure:
+Use an external stylesheet located in the project folder.
+Avoid inline styles within the HTML file.
+Store all images in a dedicated images folder.
+HTML Validation
+
+The project should pass HTML Validator checks for semantic correctness.
+Semantic HTML
+
+Use semantic HTML elements to improve accessibility and structure.
+Version Control
+
+Use Git to track changes and maintain version control.
