@@ -15,7 +15,7 @@ Git: For version control.
 </ol>
 ###👤 Author
 <ul>
-  <li>![minyras](https://github.com/minyras)</li>
+  <li>! [minyras] (https://github.com/minyras) </li>
   <li>iamperii</li>
   <li>khalilovmusa</li>
   <li>xeyalmemmedov</li>
