@@ -1,7 +1,7 @@
 # 🎬 How to Watch a Movie - Project Layout 🎬
 Module 1 Project: Create the layout for the sales page of the "How to Watch a Movie" course based on the provided Figma design.
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 <ol> 
 <li>
 HTML5: For structuring content.
@@ -13,3 +13,11 @@ CSS3: For styling and layout.
 Git: For version control.
 </li>
 </ol>
+###👤 Author
+<ul>
+  <li>![minyras](https://github.com/minyras)</li>
+  <li>iamperii</li>
+  <li>khalilovmusa</li>
+  <li>xeyalmemmedov</li>
+  <li>shalbuzz</li>
+</ul>
